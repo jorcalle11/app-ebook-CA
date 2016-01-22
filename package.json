@@ -1,0 +1,35 @@
+{
+  "name": "app-ebook-ca",
+  "version": "0.0.1",
+  "description": "Aplicación web de ejemplo del libro 'Desarrollo web ágil con angular.js' escrito por Carlos Azaustre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorcalle11/app-ebook-CA.git"
+  },
+  "keywords": [
+    "app",
+    "Carlos",
+    "Azaustre",
+    "Angular.js",
+    "Desarrollo",
+    "ágil"
+  ],
+  "author": "Jorge Calle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorcalle11/app-ebook-CA/issues"
+  },
+  "homepage": "https://github.com/jorcalle11/app-ebook-CA#readme",
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-stylus": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "nib": "^1.1.0"
+  }
+}
