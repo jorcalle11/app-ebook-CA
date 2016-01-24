@@ -1,5 +1,9 @@
 {
-	"name": "app-ebook-ca",
-	"version": "0.0.1",
-	"description": "Aplicación web de ejemplo del libro 'Desarrollo web ágil con angular.js' escrito por Carlos Azaustre",
+  "name": "app-ebook-ca",
+  "version": "0.0.1",
+  "description": "Aplicación web de ejemplo del libro 'Desarrollo web ágil con angular.js' escrito por Carlos Azaustre",
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.9"
+  }
 }
