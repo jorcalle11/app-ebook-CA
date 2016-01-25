@@ -1,0 +1,28 @@
+<section class="margin-up">
+	<aside class="col m4 s12">
+		<div class="center-align">
+			<img src="/img/user.png" alt="user" class="user-avatar">
+		</div>
+		<h3 class="center-align">{{postDetail.user[0].name}}</h3>
+		<ul class="info-user">
+			<li><span class="fa fa-user font-big"></span> {{postDetail.user[0].name}}</li>
+			<li><span class="fa fa-envelope font-big"></span> {{postDetail.user[0].email}}</li>
+			<li><span class="fa fa-phone-square font-big"></span> {{postDetail.user[0].phone}}</li>
+			<li><span class="fa fa-share-square-o font-big"></span> {{postDetail.user[0].website}}</li>
+		</ul>
+	</aside>
+	<article class="col m8">
+		<h4 class="center-align">{{postDetail.post.title}}</h4>
+		<p class="margin-up">{{postDetail.post.body}}</p>
+		<section class="margin-up">
+			<h5><span class="fa fa-comments-o"></span> Comentarios</h5>
+			<ul class="collection">
+				<li ng-repeat="comment in postDetail.comments" class="collection-item">
+					<span class="fa fa-user"></span> <strong>{{comment.name}}</strong>
+					<br><span class="fa fa-envelope"></span> <span class="title">{{comment.email}}</span>
+					<p class="comment-body">{{comment.body}}</p>
+				</li>
+			</ul>
+		</section>
+	</article>
+</section>

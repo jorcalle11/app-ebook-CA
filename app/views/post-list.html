@@ -1,0 +1,17 @@
+<section class="container">
+	<h4 class="center-align">Posts de JsonPlaceHolder</h4>
+	<p class="margin-up">
+		A continuación se muestran todos los posts cargados desde la Api
+	</p>
+	<p>
+		<a href="/new" class="waves-effect waves-light btn">Nueva Entrada</a>
+	</p>
+	<ul class="collection margin-up">
+		<li ng-repeat="post in postList.posts" class="collection-item">
+			<a href="/post/{{post.id}}">
+				{{post.title}}
+				<span class="badge">{{post.id}}</span>
+			</a>
+		</li>
+	</ul>
+</section>

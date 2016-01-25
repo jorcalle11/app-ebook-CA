@@ -15,7 +15,7 @@ gulp.task('server',function(){
 		root:'./app',
 		port: 3000,
 		hostname: '0.0.0.0',
-		middleware : function(connect, opt){
+		middleware: function(connect, opt){
 			return [historyApiFallback()]
 		},
 		livereload: true
@@ -23,7 +23,7 @@ gulp.task('server',function(){
 });
 
 gulp.task('html',function(){
-	gulp.src('./app/*.html')
+	gulp.src('./app/**/*.html')
 	.pipe(connect.reload());
 });
 
@@ -65,7 +65,7 @@ gulp.task('bower',function(){
 gulp.task('watch',function(){
 	gulp.watch(['./app/**/*.html'],['html']);
 	gulp.watch(['./app/styles/*.styl'],['stylus','inject']);
-	gulp.watch(['./app/js/**/*.js','./gulpfile.js'],['jshint','inject']);
+	gulp.watch(['./app/js/*.js','./gulpfile.js'],['jshint','inject']);
 	gulp.watch(['./bower.json'],['bower']);
 });
 

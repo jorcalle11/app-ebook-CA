@@ -1,4 +1,20 @@
 body {
   background-color: #fff;
-  color: #f00;
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+}
+.margin-up {
+  margin-top: 3em;
+}
+.font-big {
+  font-size: 1.3em;
+}
+.info-user li {
+  padding: 0.5em;
+}
+.user-avatar {
+  width: 100px;
+}
+.comment-body {
+  font-style: italic;
 }

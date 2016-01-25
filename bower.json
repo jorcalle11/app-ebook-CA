@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Aplicación web de ejemplo del libro 'Desarrollo web ágil con angular.js' escrito por Carlos Azaustre",
   "dependencies": {
-    "bootstrap": "~3.3.6",
-    "angular": "~1.4.9"
+    "Materialize": "materialize#~0.97.5",
+    "angular": "~1.4.9",
+    "angular-route": "~1.4.9",
+    "angular-resource": "~1.4.9",
+    "font-awesome": "~4.5.0"
   }
 }
