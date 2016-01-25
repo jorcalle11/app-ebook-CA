@@ -35,3 +35,7 @@ node_modules
 
 #bower
 app/lib
+
+#production
+dist
+app/js/templates.js

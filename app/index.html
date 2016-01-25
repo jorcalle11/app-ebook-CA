@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
 		<base href="/">
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+		<!-- build:css css/style.min.css -->
 		<!-- bower:css -->
 		<link rel="stylesheet" href="lib/Materialize/bin/materialize.css" />
 		<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
@@ -13,13 +14,14 @@
 		<!-- inject:css -->
 		<link rel="stylesheet" href="/styles/main.css">
 		<!-- endinject -->
+		<!-- endbuild -->
 	</head>
 	<body ng-app="blog">
 		<h1 class="center-align">Desarrollo Web Ágil con angular.js</h1>
 		<section class="row">
 			<div ng-view></div>
 		</section>
-
+		<!-- build:js js/vendor.min.js -->
 		<!-- bower:js -->
 		<script src="lib/jquery/dist/jquery.js"></script>
 		<script src="lib/Materialize/bin/materialize.js"></script>
@@ -27,10 +29,14 @@
 		<script src="lib/angular-route/angular-route.js"></script>
 		<script src="lib/angular-resource/angular-resource.js"></script>
 		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:js js/app.min.js -->
 		<!-- inject:js -->
 		<script src="/js/app.js"></script>
 		<script src="/js/controllers.js"></script>
 		<script src="/js/services.js"></script>
+		<script src="/js/templates.js"></script>
 		<!-- endinject -->
+		<!-- endbuild -->
 	</body>
 </html>
