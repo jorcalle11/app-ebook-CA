@@ -1,7 +1,6 @@
 (function(){
 	'use strict';
 
-	angular.module('blog.services',['ngResource']);
 
 	function Post ($resource, BaseUrl){
 		return $resource(BaseUrl+'/posts/:postId',{
@@ -22,7 +21,7 @@
 	}
 
 	angular
-		.module('blog.services')
+		.module('blog.services',['ngResource'])
 		.constant('BaseUrl', 'http://jsonplaceholder.typicode.com')
 		.factory('Post', Post)
 		.factory('Comment', Comment)

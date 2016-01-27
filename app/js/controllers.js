@@ -1,8 +1,6 @@
 (function(){
 	'use strict';
 
-	angular.module('blog.controllers',['blog.services']);
-
 	function PostListCtrl(Post){
 		this.posts = Post.query();
 	}
@@ -32,7 +30,7 @@
 	function PostCreateCtrl(Post, $location){
 		var self = this;
 		this.create = function(){
-			console.log(self.post)
+			console.log(self.post);
 			Post.save(self.post);
 			self.post = {};
 			$location.url('/');
@@ -41,7 +39,7 @@
 	}
 
 	angular
-		.module('blog.controllers')
+		.module('blog.controllers',['blog.services'])
 		.controller('PostListCtrl',PostListCtrl)
 		.controller('PostDetailCtrl', PostDetailCtrl)
 		.controller('PostCreateCtrl', PostCreateCtrl);
